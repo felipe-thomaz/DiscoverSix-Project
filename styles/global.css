@@ -20,6 +20,7 @@ html {
   --grey-dark: #4d5e77;
   --grey-blue: #a1b2cd;
   --grey-light: #e5eaf1;
+  --grey-medium: #eaecf2;
 
   --hover-blue: #5699ff;
   --hover-red: #ea4b65;
@@ -96,8 +97,9 @@ button:hover,
   filter: brightness(1.2);
 }
 
-button > img .button > img {
-  margin-right: 1rem;
+button > img, 
+.button > img {
+  margin-right: 1rem; /* espaçamento da imagem no botão. ex: "Entrar na sala" */
   width: 2rem;
 }
 
@@ -107,6 +109,20 @@ button.outlined,
   color: var(--blue);
   border: 0.2rem solid var(--blue);
 }
+
+button.red,
+.button.red{
+  background: var(--red);
+  color: var(--white);
+}
+
+button.grey,
+.button.grey{
+  background: var(--grey-light);
+  color: var(--grey-dark);
+}
+
+/* HEADER */
 
 .content header {
   width: 80%;
